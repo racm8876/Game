@@ -47,7 +47,11 @@ export const Profile = () => {
       .then((res) => console.log({ message: "User Deleted", res }))
       .catch((err) => console.error("Error deleting user:", err));
 
-    setTimeout(() => navigate("/login"), 1000);
+     setTimeout(() => {
+        navigate("/login");
+        window.location.reload();
+    }, 1000);
+};
   };
   
 // gaming section 
