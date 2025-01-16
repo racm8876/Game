@@ -2,9 +2,6 @@
     font-family: 'MyCustomFont';
     src: url('../src/assets/Heathergreen.otf') format('opentype');
   }
-  p {
-    margin: 0.8rem 0.8rem;
-  }
 
 .Intro{
     height: 90vh;
@@ -14,22 +11,7 @@
     justify-content: center;
     align-items: center; */
 }
-.PJoin{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 100%;
-  font-family: "MyCustomFont","Quantico";
-  margin-bottom: 100px;
 
-.PJoin p{
-  font-size: 4rem;
-  color: red;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 .intro-content{
     height: 100%;
     width: 100%;
