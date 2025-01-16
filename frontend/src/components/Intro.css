@@ -14,7 +14,14 @@
     justify-content: center;
     align-items: center; */
 }
-
+.PJoin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  font-family: "MyCustomFont","Quantico";
+}
 .intro-content{
     height: 100%;
     width: 100%;
