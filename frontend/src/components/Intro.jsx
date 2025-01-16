@@ -30,15 +30,16 @@ const Intro = () => {
   return (
     <>
 
-   <div className='Intro'>
+    <div className='Intro'>
         <div className="intro-content">
             <p><center>JOIN THE ADVENTURE</center></p>
             <div></div>
             <div></div>
+            {token ?<Link to="/community" className='intro-button'>JOIN COMMUNITY</Link>:
             <Link to="/login" className='intro-button'>JOIN COMMUNITY</Link>}
+            
+           
         </div>
-    </div>
-
       
     </div>
     <div className='intro-bottom'>
@@ -141,9 +142,6 @@ const Intro = () => {
             <div className="section-gradient-end"></div>
         </div>
       </div>    
-
-
-
     </>
   )
 }
