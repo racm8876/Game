@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* url(../src/assets/grid.png) */
+  /* background-image:  linear-gradient(to right ,rgb(56, 55, 82),#9627d6); */
+  /* background-image:  linear-gradient(to right ,rgb(104, 1, 66),#f405b4); */
+  /* background-image:  linear-gradient(to right ,rgb(25, 58, 15),rgb(47, 98, 31),#088316); */
+  background-image:  linear-gradient(to right ,#080f45,#38b3c1);
+  /* background-color: #433242;
+   */
+   /* background-color: lightpink; */
+  background-size:contain;
+  font-family: "Montserrat", "Arial";
+}
+:root{
+  --logo-color :	#FEF14E;
+}

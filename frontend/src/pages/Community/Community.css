@@ -1,0 +1,107 @@
+
+/* Community Page Styles */
+.community-page {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: beige;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card h3, .card p {
+  color: #1a1a2e;
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.badges {
+  margin-top: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e94560;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+/* General Layout */
+.community-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 350px;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+  height: auto;
+  transform: translateX(0);
+}
+
+.member-cards-container {
+  flex-grow: 1;
+  margin-left: 20px;
+} 
+
+
+
+/* Responsive Sidebar for Mobile Screens */
+@media (max-width: 768px) {
+  .community-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .member-cards-container {
+    margin-left: 0;
+  }
+} 

@@ -1,0 +1,657 @@
+/* Existing styles */
+
+.profile-container {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-image: linear-gradient(to right, #080f45, #38b3c1);
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #28293e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.profile-details {
+  max-width: 300px;
+}
+
+.profile-details p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.status.offline {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.live-button {
+  background-color: #ff5a85;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.live-button:hover {
+  background-color: #ff7099;
+}
+
+.profile-stats {
+  margin-right: 10px;
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-stats ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-stats li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #383a5b;
+}
+
+.profile-stats li:last-child {
+  border-bottom: none;
+}
+
+.profile-stats span {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.profile-stats strong {
+  font-size: 16px;
+  color: #ff5a85;
+  font-weight: bold;
+}
+
+.clips-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.clips-section h2 span {
+  color: #ff5a85;
+}
+
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.clip-card {
+  background: #28293e;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.clip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.clip-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.clip-card span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.load-more {
+  background-color: #ff5a85;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.load-more:hover {
+  background-color: #ff7099;
+}
+
+/* General Profile Container Styling */
+.profile-container {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #1e1e2f;
+  padding: 20px;
+}
+
+/* Profile Header Styling */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #28293e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.profile-details {
+  max-width: 300px;
+}
+
+/* Status Styling */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.status.offline {
+  background-color: #ff4d4d; /* Red for offline */
+  color: #fff;
+}
+
+.status.active {
+  background-color: #4caf50; /* Green for active */
+  color: #fff;
+}
+
+/* Button Styling */
+.live-button {
+  background-color: #ff5a85;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.live-button:hover {
+  background-color: #ff7099;
+}
+
+.logout-button {
+  background-color: #ff4d4d; /* Red for logout */
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e33e3e;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.4);
+}
+
+/* Profile Stats Styling */
+.profile-stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-stats li {
+  margin-bottom: 10px;
+}
+
+.profile-stats span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.profile-stats strong {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Clips Section */
+.clips-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.clips-section h2 span {
+  color: #ff5a85;
+}
+
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.clip-card {
+  background: #28293e;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.clip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.clip-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.clip-card span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Load More Button */
+.load-more {
+  background-color: #ff5a85;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+  background-color: #ff7099;
+}
+
+/* Gaming Section CSS */
+.gaming-library-container {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.gaming-library-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gaming-library-container h2 span {
+  color: #ff5a85;
+}
+
+.gaming-library {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.game-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #28293e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.game-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.game-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.game-info p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.game-detail {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  width: 150px;
+}
+
+.download-button {
+  background-color: transparent;
+  border: 1px solid #ff5a85;
+  color: #ff5a85;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-button:hover {
+  background-color: #ff5a85;
+  color: #fff;
+}
+
+/* Testing Data */
+.add-game-form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-game-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.add-game-form button {
+  background-color: #ff5a85;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-game-form button:hover {
+  background-color: #ff3a65;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .clips-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .clips-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-stats {
+      width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clips-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-header {
+      flex-direction: column;
+  }
+
+  .profile-stats {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .clips-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+      flex-direction: column;
+  }
+
+  .profile-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .profile-stats {
+      width: 100%;
+  }
+}
+
+
+
+
+/* --------------------------------test--------------- */
+/* General Styling for Gaming Library Container */
+.gaming-library-container {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.gaming-library-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gaming-library-container h2 strong {
+  color: #ff5a85;
+}
+
+.gaming-library {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.game-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #28293e;
+  padding: 15px;
+  border-radius: 8px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1; /* Takes up available space */
+  min-width: 220px; /* Ensures a minimum width */
+}
+
+.game-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.game-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.game-info p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.game-detail {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  width: 150px;
+}
+
+.download-button {
+  background-color: transparent;
+  border: 1px solid #ff5a85;
+  color: #ff5a85;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #ff5a85;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .game-row {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .game-detail {
+      width: 100%;
+      text-align: left;
+  }
+
+  .download-button {
+      align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gaming-library-container {
+      padding: 15px;
+  }
+
+  .game-image {
+      width: 50px;
+      height: 50px;
+  }
+
+  .game-info h3 {
+      font-size: 16px;
+  }
+
+  .game-info p {
+      font-size: 12px;
+  }
+
+  .game-detail {
+      font-size: 12px;
+  }
+
+  .download-button {
+      padding: 5px 10px;
+      font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gaming-library-container {
+      padding: 10px;
+  }
+
+  .game-image {
+      width: 40px;
+      height: 40px;
+  }
+
+  .game-info h3 {
+      font-size: 14px;
+  }
+
+  .game-info p {
+      font-size: 10px;
+  }
+
+  .game-detail {
+      font-size: 10px;
+  }
+
+  .download-button {
+      padding: 5px 10px;
+      font-size: 10px;
+  }
+}

@@ -1,0 +1,142 @@
+.footer {
+  height: 40vh;
+  background-image: linear-gradient(to bottom, #000000 50%, transparent);
+  color: white;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  flex: 1;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+#logoName {
+  font-size: 1.9rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.footer-logo h1 {
+  font-size: 3rem;
+  color: var(--logo-color);
+}
+
+.footer-right {
+  margin-right: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: var(--logo-color);
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding-top: 3rem;
+      height: auto;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+  }
+
+  .footer-logo {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  .footer-logo h1 {
+      font-size: 2rem;
+  }
+
+  .footer-right {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+      font-size: 1.2rem;
+  }
+
+  .footer-links ul li a,
+  .footer-social ul li a {
+      font-size: 0.9rem;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  .footer {
+      height: auto;
+      padding-top: 5rem;
+  }
+
+  .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer-logo h1 {
+      font-size: 3rem;
+  }
+
+  .footer-right {
+      flex-direction: row;
+      gap: 5rem;
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+      font-size: 1.5rem;
+  }
+
+  .footer-links ul li a,
+  .footer-social ul li a {
+      font-size: 1rem;
+  }
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Header Styles */
+header {
+    min-block-size: 15vh;
+    padding: 1rem 0;
+    padding-inline-end: 1rem;
+    color: white;
+    margin-block-end: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.headerContent {
+    inline-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoSpace {
+    font-size: 2.2rem;
+    color: var(--logo-color);
+    font-weight: 600;
+    text-decoration: none;
+    flex: 1;
+    text-align: left;
+}
+
+.logoSpace h1 {
+    color: #88f4ed;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.logoSpace h1:hover {
+    color: rgb(0, 141, 141);
+    text-shadow: white 0px 0px 2px;
+}
+
+/* Navigation Links */
+.navLinks {
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks > a {
+    color: white;
+    text-decoration: none;
+}
+
+.navLinks > a:hover {
+    color: blue;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLinks.mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 1rem;
+    width: 100%;
+}
+
+.navLinks.mobile > a {
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Mobile Menu Active */
+.navLinks.mobile.active {
+    display: flex;
+    z-index: 9999; /* Ensure it appears on top */
+}
+
+/* User Info */
+.user-info {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-toggle {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-left: 20px;
+}
+
+.profile-toggle:hover {
+    color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navLinks.mobile.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoSpace {
+        font-size: 1.6rem;
+    }
+
+    .navLinks.mobile {
+        width: auto;
+    }
+
+    .navLinks.mobile > a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Update User Info Display */
+.profile-toggle {
+    color: rgb(1, 1, 14);
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-left: 20px;
+}
+
+.profile-toggle:hover {
+    color: white;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.dropdown-item {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Updates */
+@media (max-width: 768px) {
+    .navLinks.mobile {
+        width: auto;
+    }
+
+    .navLinks.mobile > a {
+        font-size: 1.2rem;
+    }
+}
