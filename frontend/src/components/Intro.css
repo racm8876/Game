@@ -2,8 +2,8 @@
     font-family: 'MyCustomFont';
     src: url('../src/assets/Heathergreen.otf') format('opentype');
   }
-  center{
-    margin-top: 0.8rem;
+  p {
+    margin: 0.8rem 0.8rem;
   }
 
 .Intro{
