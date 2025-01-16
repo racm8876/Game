@@ -32,14 +32,16 @@ const Intro = () => {
 
     <div className='Intro'>
         <div className="intro-content">
-            <p><center>JOIN THE ADVENTURE</center></p>
-            <div></div>
-            <div></div>
-            {token ?<Link to="/community" className='intro-button'>JOIN COMMUNITY</Link>:
-            <Link to="/login" className='intro-button'>LOGIN TO JOIN COMMUNITY</Link>}
-            
-           
-        </div>
+    <p style={{ textAlign: "center" }}>JOIN THE ADVENTURE</p>
+    <div></div>
+    <div></div>
+    {token ? (
+        <Link to="/community" className="intro-button">JOIN COMMUNITY</Link>
+    ) : (
+        <Link to="/login" className="intro-button">LOGIN TO JOIN COMMUNITY</Link>
+    )}
+</div>
+
       
     </div>
     <div className='intro-bottom'>
