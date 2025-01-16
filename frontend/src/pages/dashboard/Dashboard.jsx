@@ -83,28 +83,28 @@ const Dashboard = () => {
       </div>
       <hr />
         {/* Login Activity Section */}
-        <section className="dashboard-section ">
-          <h2>Login Activity</h2>
-          <p>Recent logins:</p>
-          <table>
-            <thead>
-              <tr>
-                <th>User</th>
-                <th>Email</th>
-                <th>Login time</th>
+         <section className="dashboard-section">
+        <h2>Login Activity</h2>
+        <p>Recent logins:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Login Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {userLogins.map((user, index) => (
+              <tr key={index}>
+                <td>🔑 {user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.createdAt}</td>
               </tr>
-            </thead>
-            <tbody>
-              {userLogins.map((user, index) => (
-                <tr key={index}>
-                  <td>🔑 {user.name}</td>
-                  <td>{user.email}</td>
-                  <td>{user.createdAt}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </section>
+            ))}
+          </tbody>
+        </table>
+      </section>
     </div>
   );
 };
