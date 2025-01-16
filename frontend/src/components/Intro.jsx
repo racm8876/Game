@@ -32,7 +32,7 @@ const Intro = () => {
 
     <div className='Intro'>
         <div className="intro-content">
-            <p><center>JOIN THE ADVENTURE</center></p>
+            <p>JOIN THE ADVENTURE</p>
             <div></div>
             <div></div>
             {token ?<Link to="/community" className='intro-button'>JOIN COMMUNITY</Link>:
